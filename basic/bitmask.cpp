@@ -72,6 +72,24 @@ void properties(int a, int b)
 // a-b = ((a|b)⊕b)-(b⊕(a&b))
 }
 
+void playwith_char(char A, char B)
+{
+ cout<<char('A'|(1<<5))<<endl;     //Convert Char to lower case;
+ cout<<char('a'&(~(1<<5)))<<endl;    //Convert Char to upper case;
+//  Actually char of 1<<5 is _(space);
+//  Take any upper case letter and its |(or) with space will get the corresponding lower case letter
+ cout<<char('C'|' ')<<endl;   // will make it small c
+ //if you have a lower case letter and you want to make it upper case in that situation 
+ cout<<char('c'&'_')<<endl ; // this will make it capital 
+
+ //if we want to know the position of the alphabet in the asci value 
+//  (‘A’ & 31) returns position 1
+//  (‘c’ & 31) returns position 3
+
+
+
+}
+
 
 
 
